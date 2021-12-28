@@ -19,6 +19,7 @@ public class Signup_Newuser {
 		
 	driver.get(prop.getProperty("baseUrl"));
 	
+	
 	driver.manage().window().maximize();
 	Thread.sleep(3000);
 	driver.findElement(By.xpath(prop.getProperty("Bannerclick"))).click();

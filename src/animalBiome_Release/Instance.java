@@ -12,8 +12,9 @@ public class Instance {
 			  if (driver == null) 
 			   {
 				  
-				System.setProperty("webdriver.chrome.driver","D:\\Selenium\\chromedriver2.exe");
+				System.setProperty("webdriver.chrome.driver","D:\\Selenium\\chromedriver.exe");
 			   	ChromeOptions options = new ChromeOptions();
+			   	//options.setBinary("C:\\ThePAthtoChrome.exe");
 			   	options.addArguments("incognito");
 			   	options.addArguments("use-fake-ui-for-media-stream"); 
 			   	driver = new ChromeDriver(options);
