@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class Signin_existeduser {
+public class Signin_Existing_User {
 	WebDriver driver = Instance.getInstance();
 	Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
 	
