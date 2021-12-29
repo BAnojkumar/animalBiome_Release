@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="automated_animalBiome">
-  <test thread-count="5" name="Test">
+<!--  <test thread-count="5" name="Test">
 <classes>
       <class name="animalBiome_Release.Signup_Newuser"/>
 </classes>
-  </test> <!-- Test -->
+
+  </test> -->
+  <!-- <test name='Exist_user'>
+  <classes>
+      <class name="animalBiome_Release.Exist_user"/>
+</classes>
+  </test> -->
+  <test name='Addpet_dog_with_imgvetdetails'>
+  <classes>
+      <class name="animalBiome_Release.Dog_Img_Vet"/>
+</classes>
+  </test>
+  <test name='Addpet_dog_with_img_without_vet'>
+  <classes>
+      <class name="animalBiome_Release.Dog_Img_NoVet"/>
+</classes>
+  </test>
+  <test name='Addpet_dog_without_img_with_vet'>
+  <classes>
+      <class name="animalBiome_Release.Dog_NoImg_Vet"/>
+</classes>
+  </test>
+  <test name='Addpet_dog_without_img_vet'>
+  <classes>
+      <class name="animalBiome_Release.Dog_Health_Diet_None"/>
+</classes>
+  </test>
 </suite> <!-- Suite -->

@@ -12,32 +12,18 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class Addpet_dog_without_img_with_vet {
+public class Dog_NoImg_Vet {
 	WebDriver driver = Instance.getInstance();
 	Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
 	
-	
-	@Test(priority=1, enabled=true)
-	public void start() {
-		
-	driver.get(prop.getProperty("baseUrl"));
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	
-	driver.manage().window().maximize();
-	driver.findElement(By.xpath(prop.getProperty("Bannerclick"))).click();
-	}
-	@Test(priority=2, enabled=true)
+	@Test(priority=4, enabled=true)
 public void addpet_dog() throws Exception {	
-
-		driver.findElement(By.xpath(prop.getProperty("username"))).
-		sendKeys(prop.getProperty("username_user"));
-		driver.findElement(By.xpath(prop.getProperty("password"))).
-		sendKeys(prop.getProperty("password_pdw"));
-		driver.findElement(By.linkText(prop.getProperty("loginbutton"))).click();
-		//assert.assertEquals(false, false)
-		Thread.sleep(10000);
-		WebDriverWait wait = new WebDriverWait(driver,50);
+		
+		//--addpet_button--------
+		
+	WebDriverWait wait = new WebDriverWait(driver,50);
 	 wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click(); 
+	 
 	 //--------------------addpet------------
 	 
 driver.findElement(By.xpath(prop.getProperty("pet_name"))).sendKeys((prop.getProperty("pet_name_info"))+"_" +System.currentTimeMillis());
@@ -112,6 +98,7 @@ driver.findElement(By.xpath(prop.getProperty("vet_add_vet"))).click();
 js.executeScript("window.scrollBy(0,300)","" );
 Thread.sleep(3000);
 driver.findElement(By.xpath(prop.getProperty("final_submitbutton"))).click();
+Thread.sleep(20000);
 	
 }
 

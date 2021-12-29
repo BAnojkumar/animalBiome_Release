@@ -1,9 +1,5 @@
-
 package animalBiome_Release;
 
-import static org.testng.Assert.assertEquals;
-
-import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -16,39 +12,25 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class Addpet_dog_exist_withimg_vetdetails {
+public class Dog_Img_NoVet {
+	WebDriver driver = Instance.getInstance();
+	Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
 	
-		WebDriver driver = Instance.getInstance();
-		Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
+	@Test(priority=3, enabled=true)
+public void addpet_dog() throws Exception {	
 		
+		//----------add pet button------------
 		
-		@Test(priority=1, enabled=true)
-		public void start() {
-			
-		driver.get(prop.getProperty("baseUrl"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		driver.manage().window().maximize();
-		driver.findElement(By.xpath(prop.getProperty("Bannerclick"))).click();
-		}
-		@Test(priority=2, enabled=true)
-	public void addpet_dog() throws Exception {	
-	
-			driver.findElement(By.xpath(prop.getProperty("username"))).
-			sendKeys(prop.getProperty("username_user"));
-			driver.findElement(By.xpath(prop.getProperty("password"))).
-			sendKeys(prop.getProperty("password_pdw"));
-			driver.findElement(By.linkText(prop.getProperty("loginbutton"))).click();
-			Thread.sleep(10000);
-			WebDriverWait wait = new WebDriverWait(driver,50);
-		 wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click(); 
-		 //--------------------addpet------------
+		WebDriverWait wait = new WebDriverWait(driver,50);
+		 wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click();
 		 
+	 //--------------------addpet------------
+	 
 driver.findElement(By.xpath(prop.getProperty("pet_name"))).sendKeys((prop.getProperty("pet_name_info"))+"_" +System.currentTimeMillis());
 driver.findElement(By.xpath(prop.getProperty("pet_years"))).sendKeys("3");
 driver.findElement(By.xpath(prop.getProperty("pet_months"))).sendKeys("3");
 Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("male_radiobutton"))).click();
+driver.findElement(By.xpath(prop.getProperty("female_radiobutton"))).click();
 
 WebElement pet_profile=driver.findElement(By.xpath(prop.getProperty("profile_image")));
 JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -71,10 +53,10 @@ driver.findElement(By.xpath(prop.getProperty("pet_breed_select2"))).click();
 Thread.sleep(5000);
 driver.findElement(By.xpath(prop.getProperty("pet_weight"))).sendKeys("3");
 Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("lbs_radio"))).click();
+driver.findElement(By.xpath(prop.getProperty("kgs_radio"))).click();
 js.executeScript("window.scrollBy(0,500)","" );
 Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("neutered_y"))).click();
+driver.findElement(By.xpath(prop.getProperty("neutered_n"))).click();
 driver.findElement(By.xpath(prop.getProperty("pet_city"))).sendKeys(prop.getProperty("pet_city_info"));
 driver.findElement(By.xpath(prop.getProperty("pet_state"))).sendKeys(prop.getProperty("pet_state_info"));
 driver.findElement(By.xpath(prop.getProperty("pet_country"))).sendKeys(prop.getProperty("pet_country_info"));
@@ -97,29 +79,9 @@ js.executeScript("window.scrollBy(0,300)","" );
 Thread.sleep(5000);
 driver.findElement(By.xpath(prop.getProperty("decription"))).sendKeys(prop.getProperty("decription_info"));	
 driver.findElement(By.xpath(prop.getProperty("confirm_button"))).click();
-Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("add_vet_button"))).click();
-
-//-------------------vet_information-------------
-Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("Veterinary_clinic_name"))).sendKeys(prop.getProperty("Veterinary_clinic_name_info"));
-driver.findElement(By.xpath(prop.getProperty("Vet_Name"))).sendKeys(prop.getProperty("Vet_Name_info"));			
-driver.findElement(By.xpath(prop.getProperty("vet_city"))).sendKeys(prop.getProperty("vet_city_info"));			
-driver.findElement(By.xpath(prop.getProperty("vet_state"))).sendKeys(prop.getProperty("vet_state_info"));			
-driver.findElement(By.xpath(prop.getProperty("vet_street"))).sendKeys(prop.getProperty("vet_street_info"));	
-Thread.sleep(5000);
-WebElement m=driver.findElement(By.xpath("(//div[@class='modal-footer'])[2]"));
-js.executeScript("arguments[0].scrollIntoView(true);", m);
-Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("vet_postalcode"))).sendKeys(prop.getProperty("vet_postalcode_info"));	
-Select s1=new Select(driver.findElement(By.xpath(prop.getProperty("vet_country_dropdown"))));
-s1.selectByValue("India");
-driver.findElement(By.xpath(prop.getProperty("vet_email"))).sendKeys(prop.getProperty("vet_email_info"));		
-driver.findElement(By.xpath(prop.getProperty("vet_phonenumber"))).sendKeys(prop.getProperty("vet_phonenumber_info"));	
-driver.findElement(By.xpath(prop.getProperty("vet_add_vet"))).click();
-js.executeScript("window.scrollBy(0,300)","" );
 Thread.sleep(3000);
 driver.findElement(By.xpath(prop.getProperty("final_submitbutton"))).click();
-		
-}
+Thread.sleep(20000);
+	}
+
 }
