@@ -22,20 +22,21 @@ public class Dog_Img_Vet {
 		Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
 		
 		@Test(priority=2, enabled=true)
-	public void addpet_dog() throws Exception {
+	public void addpet_dogimg_vet() throws Exception {
 			
 			//---add pet button----------
-			
-			WebDriverWait wait = new WebDriverWait(driver,50);
-			 wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click(); 
+					
+WebDriverWait wait = new WebDriverWait(driver,50);
+wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click(); 
+			 
 		 //--------------------addpet------------
-
+			 
+driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 driver.findElement(By.xpath(prop.getProperty("pet_name"))).sendKeys((prop.getProperty("pet_name_info"))+"_" +System.currentTimeMillis());
 driver.findElement(By.xpath(prop.getProperty("pet_years"))).sendKeys("3");
 driver.findElement(By.xpath(prop.getProperty("pet_months"))).sendKeys("3");
 Thread.sleep(5000);
 driver.findElement(By.xpath(prop.getProperty("male_radiobutton"))).click();
-
 WebElement pet_profile=driver.findElement(By.xpath(prop.getProperty("profile_image")));
 JavascriptExecutor js = (JavascriptExecutor) driver;
 js.executeScript("window.scrollBy(0,400)","" );
@@ -43,7 +44,9 @@ Thread.sleep(5000);
 driver.findElement(By.xpath(prop.getProperty("profile_image"))).click();
 Thread.sleep(5000);
 Runtime.getRuntime().exec(prop.getProperty("Archer_image"));
+Thread.sleep(10000);
 driver.findElement(By.xpath(prop.getProperty("popup_submitbutton"))).click();
+
 driver.findElement(By.xpath(prop.getProperty("aboutpet_nextstepbutton"))).click();
 Thread.sleep(5000);
 //------------more about pet-----------------

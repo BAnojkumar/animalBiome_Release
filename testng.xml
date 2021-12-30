@@ -13,27 +13,28 @@
 </classes>
   </test> 
   
-  <test name='Addpet_dog_with_imgvetdetails'>
-  <classes>
-      <class name="animalBiome_Release.Dog_Img_Vet"/>
-</classes>
-  </test>
+ <test name='Addpet_dog_with_imgvetdetails'> 
+ <classes> 
+    <class name="animalBiome_Release.Dog_Img_Vet"/> 
+</classes> 
+</test> 
   
-  <test name='Addpet_dog_with_img_without_vet'>
-  <classes>
-      <class name="animalBiome_Release.Dog_Img_NoVet"/>
-</classes>
-  </test>
+ <test name='Addpet_dog_with_img_without_vet'> 
+ <classes> 
+  <class name="animalBiome_Release.Dog_Img_NoVet"/> 
+ </classes> 
+  </test> 
   
-  <test name='Addpet_dog_without_img_with_vet'>
-  <classes>
-      <class name="animalBiome_Release.Dog_NoImg_Vet"/>
-</classes>
-  </test>
+ <test name='Addpet_dog_without_img_with_vet'> 
+ <classes> 
+  <class name="animalBiome_Release.Dog_NoImg_Vet"/>
+</classes> 
+</test> 
   
-  <test name='Addpet_dog_without_img_vet'>
-  <classes>
-      <class name="animalBiome_Release.Dog_Health_Diet_None"/>
-</classes>
-  </test>
-</suite> <!-- Suite -->
+ <test name='Addpet_dog_without_img_vet'>
+ <classes>
+  <class name="animalBiome_Release.Dog_Health_Diet_None"/> 
+</classes> 
+ </test> 
+</suite> 
+<!-- Suite -->

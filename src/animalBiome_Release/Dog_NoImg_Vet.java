@@ -17,12 +17,13 @@ public class Dog_NoImg_Vet {
 	Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
 	
 	@Test(priority=4, enabled=true)
-public void addpet_dog() throws Exception {	
+public void addpet_dog_noimg_vet() throws Exception {	
 		
 		//--addpet_button--------
 		
-	WebDriverWait wait = new WebDriverWait(driver,50);
-	 wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click(); 
+driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);	
+WebDriverWait wait = new WebDriverWait(driver,50);
+wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click(); 
 	 
 	 //--------------------addpet------------
 	 

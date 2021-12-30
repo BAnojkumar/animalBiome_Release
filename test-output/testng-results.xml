@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-29T10:11:29 IST" name="automated_animalBiome" finished-at="2021-12-29T10:17:57 IST" duration-ms="388042">
+  <suite started-at="2021-12-30T16:52:50 IST" name="automated_animalBiome" finished-at="2021-12-30T16:59:51 IST" duration-ms="420768">
     <groups>
     </groups>
-    <test started-at="2021-12-29T10:11:29 IST" name="Exist_user" finished-at="2021-12-29T10:11:50 IST" duration-ms="20821">
-      <class name="animalBiome_Release.Exist_user">
-        <test-method signature="start()[pri:1, instance:animalBiome_Release.Exist_user@2cf92cc7]" started-at="2021-12-29T10:11:29 IST" name="start" finished-at="2021-12-29T10:11:50 IST" duration-ms="20734" status="PASS">
+    <test started-at="2021-12-30T16:52:50 IST" name="Exist_user" finished-at="2021-12-30T16:53:16 IST" duration-ms="26278">
+      <class name="animalBiome_Release.Signin_Existing_User">
+        <test-method signature="start()[pri:1, instance:animalBiome_Release.Signin_Existing_User@2cf92cc7]" started-at="2021-12-30T16:52:50 IST" name="start" finished-at="2021-12-30T16:53:16 IST" duration-ms="26223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-      </class> <!-- animalBiome_Release.Exist_user -->
+      </class> <!-- animalBiome_Release.Signin_Existing_User -->
     </test> <!-- Exist_user -->
-    <test started-at="2021-12-29T10:11:50 IST" name="Addpet_dog_with_imgvetdetails" finished-at="2021-12-29T10:13:35 IST" duration-ms="104352">
-      <class name="animalBiome_Release.Addpet_dog_exist_withimg_vetdetails">
-        <test-method signature="addpet_dog()[pri:2, instance:animalBiome_Release.Addpet_dog_exist_withimg_vetdetails@224b4d61]" started-at="2021-12-29T10:11:50 IST" name="addpet_dog" finished-at="2021-12-29T10:13:35 IST" duration-ms="104347" status="PASS">
+    <test started-at="2021-12-30T16:53:16 IST" name="Addpet_dog_with_imgvetdetails" finished-at="2021-12-30T16:55:09 IST" duration-ms="113212">
+      <class name="animalBiome_Release.Dog_Img_Vet">
+        <test-method signature="addpet_dogimg_vet()[pri:2, instance:animalBiome_Release.Dog_Img_Vet@224b4d61]" started-at="2021-12-30T16:53:16 IST" name="addpet_dogimg_vet" finished-at="2021-12-30T16:55:09 IST" duration-ms="113205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addpet_dog -->
-      </class> <!-- animalBiome_Release.Addpet_dog_exist_withimg_vetdetails -->
+        </test-method> <!-- addpet_dogimg_vet -->
+      </class> <!-- animalBiome_Release.Dog_Img_Vet -->
     </test> <!-- Addpet_dog_with_imgvetdetails -->
-    <test started-at="2021-12-29T10:13:35 IST" name="Addpet_dog_with_img_without_vet" finished-at="2021-12-29T10:14:56 IST" duration-ms="81707">
-      <class name="animalBiome_Release.Addpet_dog_withimg_withoutvet">
-        <test-method signature="addpet_dog()[pri:3, instance:animalBiome_Release.Addpet_dog_withimg_withoutvet@5c48c0c0]" started-at="2021-12-29T10:13:35 IST" name="addpet_dog" finished-at="2021-12-29T10:14:56 IST" duration-ms="81703" status="PASS">
+    <test started-at="2021-12-30T16:55:09 IST" name="Addpet_dog_with_img_without_vet" finished-at="2021-12-30T16:56:41 IST" duration-ms="91525">
+      <class name="animalBiome_Release.Dog_Img_NoVet">
+        <test-method signature="addpet_dogimg_novet()[pri:3, instance:animalBiome_Release.Dog_Img_NoVet@10c8f62]" started-at="2021-12-30T16:55:09 IST" name="addpet_dogimg_novet" finished-at="2021-12-30T16:56:41 IST" duration-ms="91517" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addpet_dog -->
-      </class> <!-- animalBiome_Release.Addpet_dog_withimg_withoutvet -->
+        </test-method> <!-- addpet_dogimg_novet -->
+      </class> <!-- animalBiome_Release.Dog_Img_NoVet -->
     </test> <!-- Addpet_dog_with_img_without_vet -->
-    <test started-at="2021-12-29T10:14:56 IST" name="Addpet_dog_without_img_with_vet" finished-at="2021-12-29T10:16:34 IST" duration-ms="97296">
-      <class name="animalBiome_Release.Addpet_dog_without_img_with_vet">
-        <test-method signature="addpet_dog()[pri:4, instance:animalBiome_Release.Addpet_dog_without_img_with_vet@5fb97279]" started-at="2021-12-29T10:14:56 IST" name="addpet_dog" finished-at="2021-12-29T10:16:34 IST" duration-ms="97292" status="PASS">
+    <test started-at="2021-12-30T16:56:41 IST" name="Addpet_dog_without_img_with_vet" finished-at="2021-12-30T16:58:18 IST" duration-ms="97063">
+      <class name="animalBiome_Release.Dog_NoImg_Vet">
+        <test-method signature="addpet_dog_noimg_vet()[pri:4, instance:animalBiome_Release.Dog_NoImg_Vet@61861a29]" started-at="2021-12-30T16:56:41 IST" name="addpet_dog_noimg_vet" finished-at="2021-12-30T16:58:18 IST" duration-ms="97057" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addpet_dog -->
-      </class> <!-- animalBiome_Release.Addpet_dog_without_img_with_vet -->
+        </test-method> <!-- addpet_dog_noimg_vet -->
+      </class> <!-- animalBiome_Release.Dog_NoImg_Vet -->
     </test> <!-- Addpet_dog_without_img_with_vet -->
-    <test started-at="2021-12-29T10:16:34 IST" name="Addpet_dog_without_img_vet" finished-at="2021-12-29T10:17:57 IST" duration-ms="83719">
-      <class name="animalBiome_Release.Addpet_dog_with_health_and_diet_none">
-        <test-method signature="addpet_dog()[pri:5, instance:animalBiome_Release.Addpet_dog_with_health_and_diet_none@63cd604c]" started-at="2021-12-29T10:16:34 IST" name="addpet_dog" finished-at="2021-12-29T10:17:57 IST" duration-ms="83710" status="PASS">
+    <test started-at="2021-12-30T16:58:18 IST" name="Addpet_dog_without_img_vet" finished-at="2021-12-30T16:59:51 IST" duration-ms="92556">
+      <class name="animalBiome_Release.Dog_Health_Diet_None">
+        <test-method signature="addpet_dog_health_diet_none()[pri:5, instance:animalBiome_Release.Dog_Health_Diet_None@6a1d204a]" started-at="2021-12-30T16:58:18 IST" name="addpet_dog_health_diet_none" finished-at="2021-12-30T16:59:51 IST" duration-ms="92549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addpet_dog -->
-      </class> <!-- animalBiome_Release.Addpet_dog_with_health_and_diet_none -->
+        </test-method> <!-- addpet_dog_health_diet_none -->
+      </class> <!-- animalBiome_Release.Dog_Health_Diet_None -->
     </test> <!-- Addpet_dog_without_img_vet -->
   </suite> <!-- automated_animalBiome -->
 </testng-results>

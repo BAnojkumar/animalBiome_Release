@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [automated_animalBiome]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Addpet_dog_with_img_without_vet(failed)">
+  <test thread-count="5" name="Addpet_dog_with_imgvetdetails(failed)">
     <classes>
-      <class name="animalBiome_Release.Addpet_dog_withimg_withoutvet">
+      <class name="animalBiome_Release.Dog_Img_Vet">
         <methods>
           <include name="addpet_dog"/>
         </methods>
-      </class> <!-- animalBiome_Release.Addpet_dog_withimg_withoutvet -->
+      </class> <!-- animalBiome_Release.Dog_Img_Vet -->
     </classes>
-  </test> <!-- Addpet_dog_with_img_without_vet(failed) -->
+  </test> <!-- Addpet_dog_with_imgvetdetails(failed) -->
 </suite> <!-- Failed suite [automated_animalBiome] -->

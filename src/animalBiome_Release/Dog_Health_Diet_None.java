@@ -17,12 +17,13 @@ public class Dog_Health_Diet_None {
 	Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
 	
 	@Test(priority=5, enabled=true)
-public void addpet_dog() throws Exception {	
+public void addpet_dog_health_diet_none() throws Exception {	
 		
 		//----add pet botton----------
 		
-	WebDriverWait wait = new WebDriverWait(driver,50);
-	 wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click();
+driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);			
+WebDriverWait wait = new WebDriverWait(driver,50);
+wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("addpet_button")))).click();
 	 
 	 //--------------------addpet------------
 	 
@@ -39,6 +40,7 @@ Thread.sleep(5000);
 driver.findElement(By.xpath(prop.getProperty("profile_image"))).click();
 Thread.sleep(5000);
 Runtime.getRuntime().exec(prop.getProperty("Archer_image"));
+Thread.sleep(10000);
 driver.findElement(By.xpath(prop.getProperty("popup_submitbutton"))).click();
 driver.findElement(By.xpath(prop.getProperty("aboutpet_nextstepbutton"))).click();
 Thread.sleep(5000);
