@@ -7,9 +7,14 @@
 </classes>
 
   </test> -->
-  <test name='Exist_user'>
+  <test name='Exist_user'> 
+ <classes> 
+ <class name="animalBiome_Release.Signin_Existing_User"/> 
+</classes> 
+ </test> 
+   <!-- <test name='Exist_user_oral'>
   <classes>
-      <class name="animalBiome_Release.Signin_Existing_User"/>
+      <class name="animalBiome_Release.Existing_Oral_user"/>
 </classes>
   </test> 
   
@@ -29,12 +34,25 @@
  <classes> 
   <class name="animalBiome_Release.Dog_NoImg_Vet"/>
 </classes> 
+
+
 </test> 
   
- <test name='Addpet_dog_without_img_vet'>
+ <test name='Addpet_dog_health_diet_none'>
  <classes>
   <class name="animalBiome_Release.Dog_Health_Diet_None"/> 
 </classes> 
+ </test>  -->
+ 
+<test name='Edit_Cat_profile'>
+ <classes>
+  <class name="animalBiome_Release.Edit_cat_profile"/> 
+</classes> 
  </test> 
+ <!-- <test name='oral_report'>
+ <classes>
+  <class name="animalBiome_Release.Oral_Reports"/> 
+</classes> 
+ </test>  --> 
 </suite> 
 <!-- Suite -->
