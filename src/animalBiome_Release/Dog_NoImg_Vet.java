@@ -36,6 +36,7 @@ driver.findElement(By.xpath(prop.getProperty("male_radiobutton"))).click();
 WebElement pet_profile=driver.findElement(By.xpath(prop.getProperty("profile_image")));
 JavascriptExecutor js = (JavascriptExecutor) driver;
 js.executeScript("window.scrollBy(0,400)","" );
+
 Thread.sleep(5000);
 driver.findElement(By.xpath(prop.getProperty("aboutpet_nextstepbutton"))).click();
 Thread.sleep(5000);

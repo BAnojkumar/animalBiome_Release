@@ -106,7 +106,7 @@ driver.findElement(By.xpath(prop.getProperty("vet_add_vet"))).click();
 js.executeScript("window.scrollBy(0,300)","" );
 Thread.sleep(3000);
 driver.findElement(By.xpath(prop.getProperty("final_submitbutton"))).click();
-
+Thread.sleep(20000);
 	}
 
 
