@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="animalBiome_Release.Addpet_dog_exist_withimg_vetdetails">
+      <class name="animalBiome_Release.Register_Sample_Cat_Oral">
         <methods>
-          <include name="addpet_dog"/>
+          <include name="register_sample_cat_oral"/>
         </methods>
-      </class> <!-- animalBiome_Release.Addpet_dog_exist_withimg_vetdetails -->
+      </class> <!-- animalBiome_Release.Register_Sample_Cat_Oral -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

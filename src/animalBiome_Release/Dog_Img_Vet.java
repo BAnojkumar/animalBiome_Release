@@ -41,11 +41,15 @@ WebElement pet_profile=driver.findElement(By.xpath(prop.getProperty("profile_ima
 JavascriptExecutor js = (JavascriptExecutor) driver;
 js.executeScript("window.scrollBy(0,400)","" );
 Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("profile_image"))).click();
-Thread.sleep(5000);
-Runtime.getRuntime().exec(prop.getProperty("Archer_image"));
-Thread.sleep(10000);
-driver.findElement(By.xpath(prop.getProperty("popup_submitbutton"))).click();
+
+/*
+ * driver.findElement(By.xpath(prop.getProperty("profile_image"))).click();
+ * Thread.sleep(5000);
+ * Runtime.getRuntime().exec(prop.getProperty("Archer_image"));
+ * Thread.sleep(10000);
+ * 
+ * driver.findElement(By.xpath(prop.getProperty("popup_submitbutton"))).click();
+ */
 
 driver.findElement(By.xpath(prop.getProperty("aboutpet_nextstepbutton"))).click();
 Thread.sleep(5000);
@@ -67,49 +71,74 @@ driver.findElement(By.xpath(prop.getProperty("neutered_y"))).click();
 driver.findElement(By.xpath(prop.getProperty("pet_city"))).sendKeys(prop.getProperty("pet_city_info"));
 driver.findElement(By.xpath(prop.getProperty("pet_state"))).sendKeys(prop.getProperty("pet_state_info"));
 driver.findElement(By.xpath(prop.getProperty("pet_country"))).sendKeys(prop.getProperty("pet_country_info"));
-driver.findElement(By.xpath(prop.getProperty("antibiotics_y"))).click();
-Select s=new Select(driver.findElement(By.xpath(prop.getProperty("body_conditions_dropdown"))));
-s.selectByIndex(0);
-s.selectByValue("4");
+
 driver.findElement(By.xpath(prop.getProperty("moreabout_nextstep_button"))).click();
 Thread.sleep(5000);
 
 //-----------------Health and diet-----------
 
-driver.findElement(By.xpath(prop.getProperty("physical_conditions"))).click();
+
+ driver.findElement(By.xpath(prop.getProperty("antibiotics_y"))).click();
+ Select s=new Select(driver.findElement(By.xpath(prop.getProperty(
+ "body_conditions_dropdown")))); s.selectByIndex(0); s.selectByValue("4");
+ js.executeScript("window.scrollBy(0,500)","" );
+ Thread.sleep(5000);
+ driver.findElement(By.xpath(prop.getProperty("medication_Antiparasitics/Antiprotozoals"))).click();
+ driver.findElement(By.xpath(prop.getProperty("suppliments_Postbiotics"))).click();
+js.executeScript("window.scrollBy(0,500)","" );
+Thread.sleep(5000);
+driver.findElement(By.xpath(prop.getProperty("Animalbiome_suppliments"))).click();
+driver.findElement(By.xpath(prop.getProperty("diet_Non_prescription"))).click();
 driver.findElement(By.xpath(prop.getProperty("diet"))).click();
 js.executeScript("window.scrollBy(0,500)","" );
 Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("mental_conditions"))).click();
-driver.findElement(By.xpath(prop.getProperty("symptoms"))).click();	
-js.executeScript("window.scrollBy(0,300)","" );
-Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("decription"))).sendKeys(prop.getProperty("decription_info"));	
-driver.findElement(By.xpath(prop.getProperty("confirm_button"))).click();
-Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("add_vet_button"))).click();
-
-//-------------------vet_information-------------
-Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("Veterinary_clinic_name"))).sendKeys(prop.getProperty("Veterinary_clinic_name_info"));
-driver.findElement(By.xpath(prop.getProperty("Vet_Name"))).sendKeys(prop.getProperty("Vet_Name_info"));			
-driver.findElement(By.xpath(prop.getProperty("vet_city"))).sendKeys(prop.getProperty("vet_city_info"));			
-driver.findElement(By.xpath(prop.getProperty("vet_state"))).sendKeys(prop.getProperty("vet_state_info"));			
-driver.findElement(By.xpath(prop.getProperty("vet_street"))).sendKeys(prop.getProperty("vet_street_info"));	
-Thread.sleep(5000);
-WebElement m=driver.findElement(By.xpath("(//div[@class='modal-footer'])[2]"));
-js.executeScript("arguments[0].scrollIntoView(true);", m);
-Thread.sleep(5000);
-driver.findElement(By.xpath(prop.getProperty("vet_postalcode"))).sendKeys(prop.getProperty("vet_postalcode_info"));	
-Select s1=new Select(driver.findElement(By.xpath(prop.getProperty("vet_country_dropdown"))));
-s1.selectByValue("India");
-driver.findElement(By.xpath(prop.getProperty("vet_email"))).sendKeys(prop.getProperty("vet_email_info"));		
-driver.findElement(By.xpath(prop.getProperty("vet_phonenumber"))).sendKeys(prop.getProperty("vet_phonenumber_info"));	
-driver.findElement(By.xpath(prop.getProperty("vet_add_vet"))).click();
-js.executeScript("window.scrollBy(0,300)","" );
-Thread.sleep(3000);
-driver.findElement(By.xpath(prop.getProperty("final_submitbutton"))).click();
-Thread.sleep(20000);
-	
+driver.findElement(By.xpath(prop.getProperty("physical_Gihealth"))).click();
+driver.findElement(By.xpath(prop.getProperty("physical_gi_colitics"))).click();
+driver.findElement(By.xpath(prop.getProperty("symptoms_skinissues"))).click();
+driver.findElement(By.xpath(prop.getProperty("symptoms_excessive_itching"))).click();
+Thread.sleep(1000);
+js.executeScript("window.scrollBy(0,200)","" );
+Thread.sleep(1000);
+Select s1=new
+Select(driver.findElement(By.xpath(prop.getProperty("severity_dropdown"))));
+s1.selectByIndex(2);
+ Select s2=new
+  Select(driver.findElement(By.xpath(prop.getProperty("frequency_dropdown"))));
+  s2.selectByIndex(2);
+  js.executeScript("window.scrollBy(0,500)","" ); Thread.sleep(5000);
+  driver.findElement(By.xpath(prop.getProperty("decription"))).sendKeys(prop.
+  getProperty("decription_info"));
+  driver.findElement(By.xpath(prop.getProperty("confirm_button"))).click();
+  Thread.sleep(5000);
+  driver.findElement(By.xpath(prop.getProperty("add_vet_button"))).click();
+  
+  //-------------------vet_information------------- Thread.sleep(5000);
+  
+  driver.findElement(By.xpath(prop.getProperty("Veterinary_clinic_name"))).
+  sendKeys(prop.getProperty("Veterinary_clinic_name_info"));
+  driver.findElement(By.xpath(prop.getProperty("Vet_Name"))).sendKeys(prop.
+  getProperty("Vet_Name_info"));
+  driver.findElement(By.xpath(prop.getProperty("vet_city"))).sendKeys(prop.
+  getProperty("vet_city_info"));
+  driver.findElement(By.xpath(prop.getProperty("vet_state"))).sendKeys(prop.
+  getProperty("vet_state_info"));
+  driver.findElement(By.xpath(prop.getProperty("vet_street"))).sendKeys(prop.
+  getProperty("vet_street_info")); Thread.sleep(5000); WebElement
+  m=driver.findElement(By.xpath("(//div[@class='modal-footer'])[2]"));
+  js.executeScript("arguments[0].scrollIntoView(true);", m);
+  Thread.sleep(5000);
+  driver.findElement(By.xpath(prop.getProperty("vet_postalcode"))).sendKeys(
+  prop.getProperty("vet_postalcode_info")); Select s3=new
+  Select(driver.findElement(By.xpath(prop.getProperty("vet_country_dropdown")))
+  ); s3.selectByValue("India");
+  driver.findElement(By.xpath(prop.getProperty("vet_email"))).sendKeys(prop.
+  getProperty("vet_email_info"));
+  driver.findElement(By.xpath(prop.getProperty("vet_phonenumber"))).sendKeys(
+  prop.getProperty("vet_phonenumber_info"));
+  driver.findElement(By.xpath(prop.getProperty("vet_add_vet"))).click();
+  js.executeScript("window.scrollBy(0,300)","" ); Thread.sleep(3000);
+  driver.findElement(By.xpath(prop.getProperty("final_submitbutton"))).click();
+  Thread.sleep(20000);
+ 
 }
 }

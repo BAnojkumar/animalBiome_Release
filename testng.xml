@@ -1,58 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="automated_animalBiome">
-<!--  <test thread-count="5" name="Test">
+ <!-- <test thread-count="5" name="Test">
 <classes>
       <class name="animalBiome_Release.Signup_Newuser"/>
-</classes>
+</classes> 
 
   </test> -->
-  <test name='Exist_user'> 
+  <!-- <test name='Exist_user'> 
  <classes> 
  <class name="animalBiome_Release.Signin_Existing_User"/> 
+</classes>  
+ </test>  -->
+ 
+ <!-- <test name='resgister_sample_cat_gut'> 
+ <classes> 
+ <class name="animalBiome_Release.Register_Sample_Cat_Oral"/> 
+</classes>  
+ </test>  -->
+ 
+ 
+  
+ <!-- <test name='Addpet_dog_with_imgvetdetails'> 
+ <classes> 
+    <class name="animalBiome_Release.Dog_Img_Vet"/> 
+</classes> 
+</test>   -->
+  
+ <!-- <test name='Addpet_dog_with_img_without_vet'> 
+ <classes> 
+ 
+  <class name="animalBiome_Release.Dog_Img_NoVet"/> 
+ </classes> 
+  </test>  -->
+  
+ <!--  <test name='Addpet_dog_without_img_with_vet'> 
+ <classes> 
+  <class name="animalBiome_Release.Dog_NoImg_Vet"/>
+</classes> 
+</test>  -->
+  
+ <!-- <test name='Addpet_dog_health_diet_none'>
+ <classes>
+  <class name="animalBiome_Release.Dog_Health_Diet_None"/> 
+</classes> 
+ </test>   -->
+  
+   <!-- <test name='Register_addpet'>
+ <classes>
+  <class name="animalBiome_Release.RegisterSample_Addpet"/> 
+</classes> 
+ </test> -->
+ <!-- <test name='Register_sample_dog_gut'>
+ <classes>
+  <class name="animalBiome_Release.Register_Sample_Dog_Gut"/> 
+</classes> 
+ </test> -->
+  
+<!--  <test name='Register_sample_dog_oral'>
+ <classes>
+  <class name="animalBiome_Release.Register_Sample_Dog_Oral"/> 
+</classes> 
+ </test>  -->
+ 
+ <!--  <test name='resgister_sample_cat_gut'> 
+ <classes> 
+ <class name="animalBiome_Release.Register_Sample_Cat_Oral"/> 
+</classes>  
+ </test> -->
+<!--  <test name='resgister_sample_cat_oral'> 
+ <classes> 
+ <class name="animalBiome_Release.Register_Sample_Cat_Oral"/> 
+</classes>  
+ </test>   -->
+ <!-- <test name='My_Account_public_share'>
+ <classes>
+  <class name="animalBiome_Release.Viewpet_Allreports"/> 
+</classes> 
+ </test> --> 
+ <!-- <test name='Edit_Dog_profile'>
+ <classes>
+  <class name="animalBiome_Release.Edit_Dog_Profile"/> 
+</classes> 
+ </test> -->
+ <!-- <test name='Edit_Cat_profile'>
+ <classes>
+  <class name="animalBiome_Release.Edit_cat_profile"/> 
+</classes>  
+</test> -->
+<!-- <test name='My_Account_adddog'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_AddDog"/> 
 </classes> 
  </test> 
-   <!-- <test name='Exist_user_oral'>
+ <test name='My_Account_addcat'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_AddCat"/> 
+</classes> 
+ </test> 
+ <test name='My_Account_public_share'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_Sharepet_Public"/> 
+</classes> 
+ </test>
+ <test name='My_Account_editdog'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_EditDog"/> 
+</classes>  
+ </test>  
+ <test name='My_Account_editcat'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_EditCat"/> 
+</classes> 
+ </test>  -->
+<!--  <test name='My_Account_privateuser'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_PriavteUser"/> 
+</classes> 
+ </test> 
+ <test name='My_Account_sharepet_private'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_Sharepet_Private"/> 
+</classes> 
+ </test> 
+ <test name='My_Account_publicuser'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_PublicUser"/> 
+</classes> 
+ </test>  -->
+ <!-- <test name='signout_ab'>
+ <classes>
+  <class name="animalBiome_Release.Signout"/> 
+</classes> 
+</test> -->
+   <test name='Exist_user_oral'>
   <classes>
       <class name="animalBiome_Release.Existing_Oral_user"/>
 </classes>
   </test> 
-  
- <test name='Addpet_dog_with_imgvetdetails'> 
- <classes> 
-    <class name="animalBiome_Release.Dog_Img_Vet"/> 
-</classes> 
-</test> 
-  
- <test name='Addpet_dog_with_img_without_vet'> 
- <classes> 
-  <class name="animalBiome_Release.Dog_Img_NoVet"/> 
- </classes> 
-  </test> 
-  
- <test name='Addpet_dog_without_img_with_vet'> 
- <classes> 
-  <class name="animalBiome_Release.Dog_NoImg_Vet"/>
-</classes> 
-
-
-</test> 
-  
- <test name='Addpet_dog_health_diet_none'>
+   <test name='oral_report'>
  <classes>
-  <class name="animalBiome_Release.Dog_Health_Diet_None"/> 
+  <class name="animalBiome_Release.Oral_Reports"/> 
+</classes>  
+</test> 
+<!-- <test name='signout_ab'>
+ <classes>
+  <class name="animalBiome_Release.Signout"/> 
 </classes> 
- </test>  -->
+</test>
+  -->
  
-<test name='Edit_Cat_profile'>
+ 
+ 
+ 
+
+ <!-- <test name='My_Account_edituserprofile_private'>
  <classes>
-  <class name="animalBiome_Release.Edit_cat_profile"/> 
+  <class name="animalBiome_Release.MyAccount_PriavteUser"/> 
+</classes> 
+
+ </test>  -->
+ <!-- <test name='My_Account_priavte'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_Sharepet_Private"/> 
+</classes> 
+ </test>-->
+<!--  <test name='My_Account_edituserprofile_public'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_PublicUser"/> 
 </classes> 
  </test> 
- <!-- <test name='oral_report'>
+ <test name='Register_sample_dog_gut'>
+ <classes>
+  <class name="animalBiome_Release.Register_Sample_Dog_Gut"/> 
+</classes> 
+ </test>
+  
+ <test name='Register_sample_dog_oral'>
+ <classes>
+  <class name="animalBiome_Release.Register_Sample_Dog_Oral"/> 
+</classes> 
+ </test> 
+  -->
+  <!-- <test name='Exist_user_oral'>
+  <classes>
+      <class name="animalBiome_Release.Existing_Oral_user"/>
+</classes>
+  </test> -->
+  <!-- <test name='oral_report'>
  <classes>
   <class name="animalBiome_Release.Oral_Reports"/> 
 </classes> 
- </test>  --> 
-</suite> 
-<!-- Suite -->
+</test>-->
+
+ 
+ <!-- <test name='My_Account_editcat'>
+ <classes>
+  <class name="animalBiome_Release.MyAccount_EditCat"/> 
+</classes> 
+ </test>  -->
+</suite>  
+

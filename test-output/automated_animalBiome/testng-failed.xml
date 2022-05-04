@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [automated_animalBiome]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Edit_Cat_profile(failed)">
+  <test thread-count="5" name="oral_report(failed)">
     <classes>
-      <class name="animalBiome_Release.Edit_cat_profile">
+      <class name="animalBiome_Release.Oral_Reports">
         <methods>
-          <include name="edit_cat_profile"/>
+          <include name="Oral_reports"/>
         </methods>
-      </class> <!-- animalBiome_Release.Edit_cat_profile -->
+      </class> <!-- animalBiome_Release.Oral_Reports -->
     </classes>
-  </test> <!-- Edit_Cat_profile(failed) -->
+  </test> <!-- oral_report(failed) -->
 </suite> <!-- Failed suite [automated_animalBiome] -->

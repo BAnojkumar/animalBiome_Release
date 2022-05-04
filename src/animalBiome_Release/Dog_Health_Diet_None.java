@@ -39,7 +39,7 @@ js.executeScript("window.scrollBy(0,400)","" );
 Thread.sleep(5000);
 driver.findElement(By.xpath(prop.getProperty("profile_image"))).click();
 Thread.sleep(5000);
-Runtime.getRuntime().exec(prop.getProperty("Archer_image"));
+Runtime.getRuntime().exec(prop.getProperty("Archer_image2"));
 Thread.sleep(10000);
 driver.findElement(By.xpath(prop.getProperty("popup_submitbutton"))).click();
 driver.findElement(By.xpath(prop.getProperty("aboutpet_nextstepbutton"))).click();
