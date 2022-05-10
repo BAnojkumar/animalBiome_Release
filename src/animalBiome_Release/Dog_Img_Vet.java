@@ -3,7 +3,6 @@ package animalBiome_Release;
 
 import static org.testng.Assert.assertEquals;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -23,7 +22,7 @@ public class Dog_Img_Vet {
 		Properties prop = PropertiesFile.readPropertyFile("ab_datafile 1.properties");
 		
 		@Test(priority=2, enabled=true)
-	public void addpet_dogimg_vet() throws IOException, InterruptedException {
+	public void addpet_dogimg_vet() throws Exception {
 			
 			//---add pet button----------
 					
@@ -43,14 +42,14 @@ JavascriptExecutor js = (JavascriptExecutor) driver;
 js.executeScript("window.scrollBy(0,400)","" );
 Thread.sleep(5000);
 
-
-driver.findElement(By.xpath(prop.getProperty("profile_image"))).click();
-Thread.sleep(5000);
-Runtime.getRuntime().exec(prop.getProperty("Archer_image"));
-Thread.sleep(10000);
-  
-driver.findElement(By.xpath(prop.getProperty("popup_submitbutton"))).click();
- 
+/*
+ * driver.findElement(By.xpath(prop.getProperty("profile_image"))).click();
+ * Thread.sleep(5000);
+ * Runtime.getRuntime().exec(prop.getProperty("Archer_image"));
+ * Thread.sleep(10000);
+ * 
+ * driver.findElement(By.xpath(prop.getProperty("popup_submitbutton"))).click();
+ */
 
 driver.findElement(By.xpath(prop.getProperty("aboutpet_nextstepbutton"))).click();
 Thread.sleep(5000);
